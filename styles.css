@@ -24,6 +24,7 @@ h2 {
 
  p {
     color: #a4a9ae;
+    font-weight: 300;
     font-size: 0.9em;
     padding: 0.3em;
 }
@@ -32,14 +33,20 @@ h2 {
 .hr-one {
     border: 2px solid black;
     width: 100%;
+    margin-bottom: 0.15em;
     margin-top: 2em;
-   
 }
 
 .hr-two {
     border: 1px solid black;
     width: 100%;
-    margin-top: .2em;
+    margin-bottom: 1.5em;
+}
+
+.hr-three {
+    border: 1px solid black;
+    width: 100%;
+    margin-top: 2em;
     margin-bottom: 1.5em;
 }
 
@@ -71,14 +78,38 @@ fieldset {
     flex-direction: column;
     padding: 0;
 }
+
+fieldset button {
+    border-radius: 3px;
+    padding: 1em;
+    margin-top: 2em;
+    background-color: #4ebbb5;
+    color: white;
+    border: 0;
+}
+
+fieldset span {
+    text-align: center;
+    font-size: .8em;
+    font-weight: 300;
+    font-style: italic;
+    color: #a4a9ae;
+    padding: 2em;
+}
+
 /* Trying out this surprisingly useful general sibling combinator  */
-legend ~ label {
-    padding-top: 1em;
-    padding-bottom: .25em;
+legend ~ div {
+    display: flex;
+    flex-direction: column;
 }
 
 label {
-    color: #9ea9b2;
+    margin-top: 1em;
+    margin-bottom: .8em;
+}
+
+label {
+    color: #46698b;
     font-weight: 300;
     font-size: .9em;
 }
@@ -96,13 +127,76 @@ textarea:focus {
     outline: 2px solid #46698b;
 }
 
+#zipcode {
+    width: 50%;
+}
+
 select#state {
     padding: 1em;
     border-radius: 5px;
+    background-color: #eff0f1;
+    border: 0;
+}
+
+.newsletter p {
+    padding-top: 1em;
+    color: #46698b;
+    font-weight: 300;
+}
+
+.checkbox input {
+    color: #489ff9;
+}
+
+.checkbox label,
+.checkbox input,
+.radio label,
+.radio input {
+    margin: .5em;
+}
+
+#textarea {
+    min-height: 100px;
+    border: 0;
+    background-color: #eff0f1;
+}
+
+.radio {
+    display: flex;
+    flex-direction: column;
+}
+
+.checkbox {
+    display: flex;
+    flex-direction: column;
+    flex-flow: column;
+}
+
+.section {
+    margin-top: 1em;
 }
 
 /* MEDIA QUERIES */
 
 @media (min-width:768px) {
-    
-}
+    form {
+        max-width: 70vw;
+        margin: 0 auto;
+    }
+    legend ~ div {
+        display: flex;
+        flex-direction: row;
+    }
+    .field input {
+        flex-basis: 75%;
+    }
+    .field label {
+        flex-basis: 30%;
+    }
+    select#state {
+        flex-basis: 75%;
+    }
+    .field {
+        margin: 10px;
+    }
+}   
