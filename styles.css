@@ -3,12 +3,11 @@
     padding: 0;
     margin: 0;
 }
-/* Exceeds Excpectations requirement: Change the background color for at least ONE
-     of the main sections of the site. -> I decided to change the entire background 
-     altogether otherwise it does not really look good in my opinion :)
-     */
+/* Change the background color for at least ONE of the main sections of the site. 
+-> this is a requirement for exceeds expectations grade. 
+Does it count if I change the background color of the entire page from white to whitesmoke? */
 body {
-    background-color: lightsteelblue;
+    background-color: whitesmoke;
     font-family: 'Comfortaa', cursive;
     font-family: 'Merriweather', serif;
     font-size: 1em;
@@ -118,7 +117,7 @@ label {
 input {
     border: 0;
     border-radius: 5px;
-    background-color: #FFF5FF;
+    background-color: #e2e2e2;
     padding: 1em;
 }
 
@@ -147,7 +146,7 @@ select#state {
     border: 0;
     padding: 1em;
     border-radius: 5px;
-    background-color: #FFF5FF;
+    background-color: #e2e2e2;
 }
 
 select {
@@ -164,9 +163,6 @@ option {
     font-weight: 300;
 }
 
-.checkbox input {
-    color: #489ff9;
-}
 /* this :checked + label is such a cool thing to use */
 input[type="checkbox"]:checked + label,
 input[type="radio"]:checked + label {
@@ -184,7 +180,7 @@ input[type="radio"]:checked + label {
     border: 0;
     margin: 10px;
     min-height: 100px;
-    background-color: #FFF5FF;
+    background-color: #e2e2e2;
     border-radius: 5px;
 }
 
