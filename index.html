@@ -8,10 +8,6 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Comfortaa&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap"
         rel="stylesheet">
@@ -27,6 +23,7 @@
             <p>Get the latest news on how your code is doing right in your inbox</p>
         </article>
     </header>
+
     <main>
         <form>
             <hr class="hr-one">
@@ -58,6 +55,7 @@
                 <div class="field">
                     <label for="state">State</label>
                     <select id="state" name="user-state">
+                        <option disabled selected value="">Choose State</option>
                         <option value="NY">New York</option>
                         <option value="CA">California</option>
                         <option value="FL">Florida</option>
@@ -91,8 +89,8 @@
                     </div>
                 </div>
 
-                <p>Newsletter format</p>
                 <div class="radio">
+                    <p class="format-header">Newsletter format</p>
                     <div class="section">
                         <div>
                             <input type="radio" id="html" value="html" name="user-newsletter">
