@@ -81,14 +81,16 @@ fieldset {
     flex-direction: column;
     padding: 0;
 }
-
+/* changed button color */
 fieldset button {
     border-radius: 5px;
-    padding: 1em;
+    padding: .8em;
     margin-top: 1.75em;
     background-color: #485063;
     color: white;
     border: 0;
+    font-weight: 500;
+    font-size: 1.2em;
 }
 
 fieldset span {
@@ -131,9 +133,8 @@ input[id="zipcode"]::placeholder {
     font-style: italic;
   }
 
-  /* Exceeds Excpectations requirement: Uses CSS transitions for focus states. */
-input:focus,
-textarea:focus {
+  /* Exceeds Expectations requirement: Uses CSS transitions for focus states. */
+input:focus {
     outline: 0;
     border: 2px solid #46698b;
 }
