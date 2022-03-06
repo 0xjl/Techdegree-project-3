@@ -3,8 +3,12 @@
     padding: 0;
     margin: 0;
 }
-
+/* Exceeds Excpectations requirement: Change the background color for at least ONE
+     of the main sections of the site. -> I decided to change the entire background 
+     altogether otherwise it does not really look good in my opinion :)
+     */
 body {
+    background-color: lightsteelblue;
     font-family: 'Comfortaa', cursive;
     font-family: 'Merriweather', serif;
     font-size: 1em;
@@ -23,7 +27,7 @@ h2 {
 }
 
  p {
-    color: #a4a9ae;
+    color: #939496;
     font-weight: 300;
     font-size: 0.9em;
     padding: 0.3em;
@@ -80,10 +84,10 @@ fieldset {
 }
 
 fieldset button {
-    border-radius: 3px;
+    border-radius: 5px;
     padding: 1em;
     margin-top: 1.75em;
-    background-color: #4ebbb5;
+    background-color: #485063;
     color: white;
     border: 0;
 }
@@ -106,27 +110,33 @@ legend ~ div {
 label {
     margin-top: 1em;
     margin-bottom: .8em;
-    color: #46698b;
+    color: #38536e;
     font-weight: 300;
     font-size: .9em;
 }
 
 input {
     border: 0;
-    border-radius: 3px;
-    background-color: #eff0f1;
+    border-radius: 5px;
+    background-color: #FFF5FF;
     padding: 1em;
 }
 
-input::placeholder {
+input[id="name"]::placeholder,
+input[id="email"]::placeholder,
+input[id="tel"]::placeholder,
+input[id="address"]::placeholder,
+input[id="city"]::placeholder,
+input[id="zipcode"]::placeholder {
     text-align: right;
     font-style: italic;
   }
 
+  /* Exceeds Excpectations requirement: Uses CSS transitions for focus states. */
 input:focus,
 textarea:focus {
     outline: 0;
-    outline: 2px solid #46698b;
+    border: 2px solid #46698b;
 }
 
 #zipcode {
@@ -134,10 +144,10 @@ textarea:focus {
 }
 
 select#state {
+    border: 0;
     padding: 1em;
     border-radius: 5px;
-    background-color: #eff0f1;
-    border: 0;
+    background-color: #FFF5FF;
 }
 
 select {
@@ -157,6 +167,11 @@ option {
 .checkbox input {
     color: #489ff9;
 }
+/* this :checked + label is such a cool thing to use */
+input[type="checkbox"]:checked + label,
+input[type="radio"]:checked + label {
+    font-weight: bold;
+}
 
 .checkbox label,
 .checkbox input,
@@ -166,10 +181,11 @@ option {
 }
 
 #textarea {
+    border: 0;
     margin: 10px;
     min-height: 100px;
-    border: 0;
-    background-color: #eff0f1;
+    background-color: #FFF5FF;
+    border-radius: 5px;
 }
 
 .radio {
@@ -195,6 +211,10 @@ option {
 
 .format-header {
     margin: .25em 0;
+}
+
+.signup-button:hover {
+    box-shadow: 0 0 1px 1px cyan;
 }
 
 /* MEDIA QUERIES */
