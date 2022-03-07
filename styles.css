@@ -133,8 +133,15 @@ input[id="zipcode"]::placeholder {
     font-style: italic;
   }
 
+input,
+select#state,
+#textarea {
+    transition-duration: 100ms;
+}
   /* Exceeds Expectations requirement: Uses CSS transitions for focus states. */
-input:focus {
+input:focus,
+select#state:focus,
+#textarea:focus {
     outline: 0;
     border: 2px solid #46698b;
 }
@@ -178,7 +185,7 @@ input[type="radio"]:checked + label {
 }
 
 #textarea {
-    border: 0;
+    border: 1px solid whitesmoke;
     margin: 10px;
     min-height: 100px;
     background-color: #e2e2e2;
