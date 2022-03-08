@@ -266,7 +266,7 @@ input[type="radio"]:checked + label {
         margin: 0 auto;
     }
     legend {
-        padding: .75em 0;
+        padding: .75em 0 0 0;
     }
     legend ~ div {
         display: flex;
@@ -288,6 +288,6 @@ input[type="radio"]:checked + label {
         flex-basis: 25%;
     }
     .topics {
-        margin: .5em 0 0 0;
+        margin: .3em 0 .5em 0;
     }
 }
