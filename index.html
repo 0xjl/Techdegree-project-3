@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form</title>
+    <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,7 +17,7 @@
 <body>
     <header>
         <nav>
-            <h1>The Code Review</h1>
+            <h1>THE CODE REVIEW</h1>
         </nav>
         <article class="header">
             <h2>Signup for our newsletter</h2>
@@ -29,9 +30,7 @@
             <hr class="hr-one">
             <hr class="hr-two">
             <fieldset>
-                <legend>
-                    <h3>Contact Information</h3>
-                </legend>
+                <legend>Contact Information</legend>
                 <!-- Uses the required attribute to add HTML5 Validation for required fields. -->
                 <div class="field">
                     <label for="name">Full Name</label>
@@ -64,16 +63,14 @@
                     </select>
                 </div>
                 <div class="field zipcode">
-                    <label for="zipcode">Zipcode</label>
+                    <label for="zipcode">Zip Code</label>
                     <input type="text" id="zipcode" name="user-zipcode" placeholder="00000">
                 </div>
             </fieldset>
             <hr class="hr-three">
 
             <fieldset class="newsletter">
-                <legend>
-                    <h3>Newsletter</h3>
-                </legend>
+                <legend>Newsletter</legend>
                 <p>Select the newsletter you would like to receive</p>
                 <div class="checkbox">
                     <div class="section">
@@ -102,13 +99,15 @@
                             <label for="text">Plain text</label>
                         </div>
                     </div>
-                    <label for="textarea">Other topics you'd like to hear about</label>
+                    <label class="topics" for="textarea">Other topics you'd like to hear about</label>
                     <textarea id="textarea" name="user-input" placeholder="Tell us what you think"></textarea>
-                    <button type="submit" class="signup-button">Sign Up</button>
-                    <span>Copyright The Code Review</span>
                 </div>
             </fieldset>
+            <div class="button-flex">
+                <button type="submit" class="signup-button">Sign Up</button>
+            </div>
         </form>
+        <footer class="copyright">Copyright The Code Review</footer>
     </main>
 </body>
 
