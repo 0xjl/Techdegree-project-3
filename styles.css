@@ -1,293 +1,307 @@
 * {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 /* Change the background color for at least ONE of the main sections of the site. 
 -> this is a requirement for exceeds expectations grade. 
 Does it count if I change the background color of the entire page from white to whitesmoke? */
 body {
-    min-width: 100%;
-    background-color: whitesmoke;
-    font-family: 'Comfortaa', cursive;
-    font-family: 'Merriweather', serif;
-    font-size: 1em;
-    line-height: 1.5;
+  min-width: 100%;
+  background-color: whitesmoke;
+  font-family: 'Merriweather', serif;
+  font-size: 1em;
+  line-height: 1.5;
 }
 
 main {
-    padding: 0 1em;
+  padding: 0 1em;
 }
 
 h1 {
-    font-size: 1.25em;
-    font-weight: 500;
+  font-size: 1.25em;
+  font-weight: 500;
 }
 
 h2 {
-    margin-top: 1em;
-    font-size: 1.2em;
-    font-weight: 900;
-    color: #2d3945;
+  margin-top: 1em;
+  font-size: 1.2em;
+  font-weight: 900;
+  color: #2d3945;
 }
 
- p {
-    color: #939496;
-    font-weight: 500;
-    font-size: 0.9em;
-    margin-top: 0.25em;
+p {
+  color: #939496;
+  font-weight: 500;
+  font-size: 0.9em;
+  margin-top: 0.25em;
 }
 
 .info {
-    padding: 0 1em;
+  padding: 0 1em;
 }
 
 /* BR STYLING */
 .hr-one {
-    border: 2px solid black;
-    width: 100%;
-    margin-bottom: 0.15em;
-    margin-top: 2em;
+  border: 2px solid black;
+  width: 100%;
+  margin-bottom: 0.15em;
+  margin-top: 2em;
 }
 
 .hr-two {
-    border: 1px solid black;
-    width: 100%;
-    margin-bottom: 1.5em;
+  border: 1px solid black;
+  width: 100%;
+  margin-bottom: 1.5em;
 }
 
 .hr-three {
-    border: 1px solid black;
-    width: 100%;
-    margin-top: 2em;
-    margin-bottom: 1.5em;
+  border: 1px solid black;
+  width: 100%;
+  margin-top: 2em;
+  margin-bottom: 1.5em;
 }
 
 /* HEADER */
 
 nav {
-    min-width: 100%;
-    height: 70px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #2d3945;
-    color: white;
+  min-width: 100%;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #2d3945;
+  color: white;
 }
 
 .header {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 /* FORM */
 legend {
-    font-size: 1.15em;
-    font-weight: bold;
+  font-size: 1.15em;
+  font-weight: bold;
 }
 
 fieldset {
-    border: 0;
-    display: flex;
-    flex-direction: column;
-    padding: 0;
+  border: 0;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
 }
 /* changed button color */
 button {
-    border-radius: 5px;
-    padding: .8em;
-    margin-top: 1.2em;
-    background-color: #485063;
-    color: white;
-    border: 0;
-    font-weight: 500;
-    font-size: 1.2em;
+  border-radius: 5px;
+  padding: 0.8em;
+  margin-top: 1.2em;
+  background-color: #485063;
+  color: white;
+  border: 0;
+  font-weight: 500;
+  font-size: 1.2em;
 }
 
 .copyright {
-    text-align: center;
-    font-size: .8em;
-    font-weight: 300;
-    font-style: italic;
-    color: #a4a9ae;
-    padding: 2em;
+  text-align: center;
+  font-size: 0.8em;
+  font-weight: 300;
+  font-style: italic;
+  color: #a4a9ae;
+  padding: 2em;
 }
 
 /* Trying out this surprisingly useful general sibling combinator  */
 legend ~ div {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 label {
-    margin-top: 1.2em;
-    margin-bottom: .6em;
-    color: #38536e;
-    font-weight: 300;
-    font-size: .9em;
+  margin-top: 1.2em;
+  margin-bottom: 0.6em;
+  color: #38536e;
+  font-weight: 300;
+  font-size: 0.9em;
 }
 
 input {
-    border: 0;
-    border-radius: 5px;
-    background-color: #e2e2e2;
-    padding: 1em;
+  border: 3px solid white;
+  border-radius: 5px;
+  background-color: #e2e2e2;
+  padding: 1em;
 }
 
-input[id="name"]::placeholder,
-input[id="email"]::placeholder,
-input[id="tel"]::placeholder,
-input[id="address"]::placeholder,
-input[id="city"]::placeholder,
-input[id="zipcode"]::placeholder {
-    text-align: right;
-    font-style: italic;
-    font-size: .8em;
-    color: rgba(128, 128, 128, 0.493);
-  }
+input[id='name']::placeholder,
+input[id='email']::placeholder,
+input[id='tel']::placeholder,
+input[id='address']::placeholder,
+input[id='city']::placeholder,
+input[id='zipcode']::placeholder {
+  text-align: right;
+  font-style: italic;
+  font-size: 0.8em;
+  color: rgba(255, 255, 255, 0.899);
+}
 
 input,
 select#state,
 #textarea,
-input[type="checkbox"],
-input[type="radio"] {
-    transition-duration: 100ms;
+input[type='checkbox'],
+input[type='radio'] {
+  transition-duration: 100ms;
 }
-  /* Exceeds Expectations requirement: Uses CSS transitions for focus states. */
+/* Exceeds Expectations requirement: Uses CSS transitions for focus states. */
+
+input:hover,
+select#state:hover,
+#textarea:hover,
+input[type='checkbox']:hover,
+input[type='radio']:hover {
+  outline: 0;
+  border: 3px solid #a4a4a4;
+  transition: all 0.2s ease-in;
+}
+
 input:focus,
 select#state:focus,
 #textarea:focus,
-input[type="checkbox"]:focus,
-input[type="radio"]:focus
- {
-    outline: 0;
-    border: 2px solid #46698b;
+input[type='checkbox']:focus,
+input[type='radio']:focus {
+  outline: 0;
+  border: 3px solid #389bff;
+  background-color: #2d3945;
+  color: aliceblue;
+  transition: all 0.3s ease-in;
 }
 
 #zipcode {
-    width: calc(50% - 10px);
+  width: calc(50% - 10px);
 }
 
 select#state {
-    border: 0;
-    padding: 1em;
-    border-radius: 5px;
-    background-color: #e2e2e2;
+  border: 0;
+  padding: 1em;
+  border-radius: 5px;
+  border: 3px solid white;
+  background-color: #e2e2e2;
 }
 
 select {
-    color: rgba(128, 128, 128, 0.493);
-    font-size: .8em;
+  color: rgba(128, 128, 128, 0.493);
+  font-size: 0.8em;
 }
 
 option {
-    color: black;
+  color: black;
 }
 
 .newsletter p {
-    padding-top: 1em;
-    color: #46698b;
-    font-weight: 300;
+  padding-top: 1em;
+  color: #46698b;
+  font-weight: 300;
 }
 
 /* this :checked + label is such a cool thing to use */
 
-input[type="checkbox"]:checked + label,
-input[type="radio"]:checked + label {
-    font-weight: bold;
+input[type='checkbox']:checked + label,
+input[type='radio']:checked + label {
+  font-weight: bold;
+  border-bottom: 2px solid black;
 }
 
 .checkbox label,
 .checkbox input,
 .radio label,
 .radio input {
-    margin: .5em;
+  margin: 0.5em;
 }
 
 #textarea {
-    border: 1px solid whitesmoke;
-    margin-top: 5px;
-    min-height: 100px;
-    background-color: #e2e2e2;
-    border-radius: 5px;
+  border: 1px solid whitesmoke;
+  margin-top: 5px;
+  min-height: 100px;
+  background-color: #e2e2e2;
+  border-radius: 5px;
 }
 
 .radio {
-    display: flex;
-    flex-direction: column;
-    flex-flow: column;
+  display: flex;
+  flex-direction: column;
+  flex-flow: column;
 }
 
 .radio div {
-    margin-bottom: .5em;
+  margin-bottom: 0.5em;
 }
 
 .checkbox {
-    display: flex;
-    flex-direction: column;
-    flex-flow: column;
-    padding-top: 0.5em;
+  display: flex;
+  flex-direction: column;
+  flex-flow: column;
+  padding-top: 0.5em;
 }
 
 .section {
-    margin-bottom: .5em;
+  margin-bottom: 0.5em;
 }
 
 .format-header {
-    margin: .25em 0;
+  margin: 0.25em 0;
 }
 
 .button-flex {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .signup-button:hover {
-    box-shadow: 0 0 1px 1px cyan;
+  box-shadow: 0 0 1px 1px cyan;
 }
 
 .topics {
-    margin: .5em 0;
+  margin: 0.5em 0;
 }
 
 /* MEDIA QUERIES */
 
-@media (min-width:768px) {
-    h2 {
-        font-size: 1.4em;
-        padding-top: 2em;
-    }
-    form {
-        max-width: 600px;
-        margin: 0 auto;
-    }
-    legend {
-        padding: .75em 0 0 0;
-    }
-    legend ~ div {
-        display: flex;
-        flex-direction: row;
-    }
-    .field input {
-        flex-basis: 75%;
-    }
-    .field label {
-        flex-basis: 25%;
-    }
-    select#state {
-        flex-basis: 75%;
-    }
-    .field {
-        margin: 10px 0;
-    }
-    #zipcode {
-        flex-basis: 25%;
-    }
-    .topics {
-        margin: .3em 0 .5em 0;
-    }
+@media (min-width: 768px) {
+  h2 {
+    font-size: 1.4em;
+    padding-top: 2em;
+  }
+  form {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  legend {
+    padding: 0.75em 0 0 0;
+  }
+  legend ~ div {
+    display: flex;
+    flex-direction: row;
+  }
+  .field input {
+    flex-basis: 75%;
+  }
+  .field label {
+    flex-basis: 25%;
+  }
+  select#state {
+    flex-basis: 75%;
+  }
+  .field {
+    margin: 10px 0;
+  }
+  #zipcode {
+    flex-basis: 25%;
+  }
+  .topics {
+    margin: 0.3em 0 0.5em 0;
+  }
 }
